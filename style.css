@@ -21,7 +21,7 @@ body {
 
 .img-container {
   width: 300px;
-  height: 400px;
+  height: 380px;
   background-color: #fff;
   box-shadow: 0 1px 5px #000, -1px -1px 5px #000;
   transition: transform 0.5s ease-in-out;
@@ -47,7 +47,7 @@ img {
 .description-container {
   position: absolute;
   width: 300px;
-  height: 400px;
+  height: 380px;
   padding: 2rem;
   background-color: #4ba9e9;
   box-shadow: 1px 1px 5px #000, 0 -1px 5px #000;
@@ -113,7 +113,7 @@ li {
 }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   position: relative;
 }
 
@@ -127,34 +127,19 @@ button {
   color: #4ba9e9;
   font-weight: bold;
   padding: 1rem;
+  font-size: 1.2rem;
   width: 120px;
   border: none;
 }
 
 .container:hover .img-container {
-  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+.container:hover .image {
+  transform: rotate(-45deg) translateX(20px);
 }
 
 .container:hover .description-container {
-  transform: translateY(50%);
-}
-
-li:hover {
-  background: #fff;
-  color: #4ba9e9;
-  border: none;
-}
-
-@media screen and (min-width: 700px) {
-  .container:hover .img-container {
-    transform: translateX(-50%);
-  }
-
-  .container:hover .image {
-    transform: rotate(-45deg) translateX(20px);
-  }
-
-  .container:hover .description-container {
-    transform: translateX(50%);
-  }
+  transform: translateX(50%);
 }
