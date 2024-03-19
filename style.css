@@ -113,7 +113,7 @@ li {
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   position: relative;
 }
 
@@ -127,7 +127,6 @@ button {
   color: #4ba9e9;
   font-weight: bold;
   padding: 1rem;
-  font-size: 1.2rem;
   width: 120px;
   border: none;
 }
