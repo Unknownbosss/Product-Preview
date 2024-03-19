@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background: linear-gradient(#4ba9e9 0%, #4ba9e9 50%, #fff 50%, #fff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.img-container {
+  width: 300px;
+  height: 380px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px #000, -1px -1px 5px #000;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 800ms;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 210px;
+  aspect-ratio: 1;
+  background: #fff;
+  transition: 0.5s ease-in-out;
+  transition-delay: 800ms;
+}
+
+img {
+  width: 100%;
+}
+
+.description-container {
+  position: absolute;
+  width: 300px;
+  height: 380px;
+  padding: 2rem;
+  background-color: #4ba9e9;
+  box-shadow: 1px 1px 5px #000, 0 -1px 5px #000;
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 800ms;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  margin-top: 1.5rem;
+}
+
+h3 span {
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #737576ce;
+  font-size: 16px;
+}
+
+h4:nth-child(2) {
+  text-transform: uppercase;
+  margin: 1.2rem 0 0.8rem;
+}
+
+.description-container p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #737576ce;
+}
+
+h4:nth-child(4) {
+  text-transform: uppercase;
+  margin: 1.2rem 0 0.8rem;
+}
+
+.size {
+  display: flex;
+  gap: 1rem;
+}
+
+li {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #737576ce;
+  border: 1px solid #737576ce;
+  margin-bottom: 3rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h5 {
+  font-size: 1.8rem;
+  position: relative;
+}
+
+h5 span {
+  position: absolute;
+  left: -14px;
+  top: -8px;
+}
+
+button {
+  color: #4ba9e9;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 120px;
+  border: none;
+}
+
+.container:hover .img-container {
+  transform: translateY(-50%);
+}
+
+.container:hover .description-container {
+  transform: translateY(50%);
+}
+
+li:hover {
+  background: #fff;
+  color: #4ba9e9;
+  border: none;
+}
+
+@media screen and (min-width: 700px) {
+  .container:hover .img-container {
+    transform: translateX(-50%);
+  }
+
+  .container:hover .image {
+    transform: rotate(-45deg) translateX(20px);
+  }
+
+  .container:hover .description-container {
+    transform: translateX(50%);
+  }
+}
